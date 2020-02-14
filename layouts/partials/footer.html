@@ -1,0 +1,13 @@
+<hr/>
+<footer class="right">
+	<nav class="footer-nav">
+		<ul>
+      {{ with .Site.Menus.main }}
+      {{ range . }}
+			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+      {{ end }}
+      <li>&copy; {{ now.Year }} {{.Site.Params.author}}</li>
+		</ul>
+	</nav>
+</footer>
