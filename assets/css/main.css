@@ -50,11 +50,6 @@ h1, h2, h3 {
 }
 
 
-/* Summaries */
-.summary {
-  margin: 20px auto;
-}
-
 img {
   max-width: 100%;
 }
@@ -63,14 +58,11 @@ figcaption {
   font-style: italic;
 }
 
-.highlight {
-  border: 1px dashed #ccc;
-  padding: 5px;
+pre {
+  width: 100%;
+  overflow: auto;
 }
 
-dt {
-  font-weight: bold;
-}
 
 .footer-nav ul {
   display: flex;
@@ -85,4 +77,9 @@ dt {
 
 footer {
   margin-bottom: 30px;
+}
+
+/* Summaries */
+.summary {
+  margin: 20px auto;
 }
