@@ -2,6 +2,7 @@
 <footer class="right">
 	<nav class="footer-nav">
 		<ul>
+      <li><a href="mailto:{{ .Site.Params.email }}">email</a></li>
       {{ with .Site.Menus.main }}
       {{ range . }}
 			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
