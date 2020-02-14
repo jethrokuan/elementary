@@ -83,3 +83,8 @@ footer {
 .summary {
   margin: 20px auto;
 }
+
+blockquote {
+  border: 2px dashed #ccc;
+  padding: 10px;
+}
