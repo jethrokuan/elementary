@@ -35,6 +35,10 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .right {
   text-align: right;
   float: right;
