@@ -1,0 +1,6 @@
+* Elementary
+
+A brutalist theme for Hugo. Basically [[https://danluu.com/][Dan Luu's blog theme]], but with a small
+amount of styling to improve the reading experience.
+
+Powers my blog: [[https://blog.jethro.dev/]]
