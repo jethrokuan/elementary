@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main>
+	<header>
+		<h1 class="underline">{{ .Title }}</h1>
+		<p>{{ .Date.Format "02 Jan 2006" }}</p>
+	</header>
 	<article>
-		<h1 class="inline underline">{{ .Title }}</h1>
-		<aside class="time"><time>{{ .Date.Format "02 Jan 2006" }}</time></aside>
-		<div>
-			{{ .Content }}
-		</div>
+		{{ .Content }}
 	</article>
 </main>
 {{ end }}

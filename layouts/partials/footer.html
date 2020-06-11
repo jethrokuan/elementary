@@ -1,16 +1,18 @@
 <hr/>
-<footer class="right">
-	<nav class="footer-nav">
-		<ul>
+<footer>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Archive</a></li>
       <li><a href="mailto:{{ .Site.Params.email }}">email</a></li>
       {{ with .Site.Menus.main }}
       {{ range . }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end }}
-      <li>&copy; {{ now.Year }} {{.Site.Params.author}}</li>
-		</ul>
-	</nav>
+      {{ end }}
+      <li></li>
+    </ul>
+  </nav>
+  <p>&copy; {{ now.Year }} {{.Site.Params.author}}</p>
 </footer>
 {{- if .Site.Params.goatcounter }}
 <script data-goatcounter="https://{{.Site.Params.goatcounter}}.goatcounter.com/count"

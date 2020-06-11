@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
+
 * {box-sizing: border-box}
 
 html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  font-size: 2.4vw;
 }
 
+@media all and (min-width:1000px) { html { font-size: 24px; } }
+@media all and (max-width:520px) { html{ font-size: 18px; } }
 
 body {
+  font-family: 'Source Serif Pro', serif;
   max-width: 800px;
   margin: 40px auto;
-  font-size: 18px;
+  font-size: 0.93rem;
   padding: 0 10px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-family: Georgia, Times, Times New Roman, serif;
 }
 
 p, a :not(.uncoloured-link) {
@@ -21,9 +22,14 @@ p, a :not(.uncoloured-link) {
 }
 
 h1, h2, h3 {
-  line-height: 1.2;
-  margin-top: 1.7rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.46;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  hyphens: none;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 .inline {
@@ -34,20 +40,10 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
 .right {
   text-align: right;
   float: right;
 }
-
-.time {
-  text-alight: right;
-  float: right;
-}
-
 
 img {
   max-width: 100%;
