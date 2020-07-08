@@ -19,6 +19,7 @@ body {
 
 p, a :not(.uncoloured-link) {
   color: inherit;
+  hyphens: auto;
 }
 
 h1, h2, h3 {
