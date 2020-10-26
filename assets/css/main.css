@@ -2,12 +2,8 @@
 
 * {box-sizing: border-box}
 
-html {
-  font-size: 2.4vw;
-}
-
-@media all and (min-width:1000px) { html { font-size: 24px; } }
-@media all and (max-width:520px) { html{ font-size: 18px; } }
+@media all and (min-width:1000px) { html { font-size: 18px; } }
+@media all and (max-width:520px) { html{ font-size: 14px; } }
 
 body {
   font-family: 'Source Serif Pro', serif;
@@ -15,6 +11,7 @@ body {
   margin: 40px auto;
   font-size: 0.93rem;
   padding: 0 10px;
+  color: #454545;
 }
 
 p, a :not(.uncoloured-link) {
@@ -78,10 +75,25 @@ footer {
 
 /* Summaries */
 .summary {
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 blockquote {
   border: 2px dashed #ccc;
   padding: 10px;
+}
+
+/* Code */
+.highlight {
+  padding: 5px 15px;
+  border: 2px dashed #ccc;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
 }
