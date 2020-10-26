@@ -2,7 +2,7 @@
 <main>
 	<header>
 		<h1 class="underline">{{ .Title }}</h1>
-		<p>{{ .Date.Format "02 Jan 2006" }}</p>
+		<p class="date">{{ .Date.Format "02 Jan 2006" }}</p>
 	</header>
 	<article>
 		{{ .Content }}

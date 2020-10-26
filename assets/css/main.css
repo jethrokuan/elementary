@@ -19,6 +19,10 @@ p, a :not(.uncoloured-link) {
   hyphens: auto;
 }
 
+.date {
+  font-size: small;
+}
+
 h1, h2, h3 {
   line-height: 1.46;
   margin-top: 1.5rem;
@@ -85,6 +89,7 @@ blockquote {
 
 /* Code */
 .highlight {
+  margin: 5px auto;
   padding: 5px 15px;
   border: 2px dashed #ccc;
 }
