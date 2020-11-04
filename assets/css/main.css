@@ -5,13 +5,23 @@
 @media all and (min-width:1000px) { html { font-size: 18px; } }
 @media all and (max-width:520px) { html{ font-size: 14px; } }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
 body {
   font-family: 'Source Serif Pro', serif;
   max-width: 800px;
   margin: 40px auto;
   font-size: 0.93rem;
   padding: 0 10px;
-  color: #454545;
+  color: rgb(38, 27, 13);
+}
+
+article {
+  line-height: 1.45;
 }
 
 p, a :not(.uncoloured-link) {
@@ -91,6 +101,7 @@ blockquote {
 
 /* Code */
 .highlight {
+  font-size: 0.9em;
   margin: 5px auto;
   padding: 5px 15px;
   border: 2px dashed #ccc;
@@ -101,6 +112,14 @@ sup, sub {
   position: relative;
   top: -0.4em;
 }
+
 sub {
   top: 0.4em;
+}
+
+p code {
+  background: hsla(25deg,75%,25%,0.1);
+  padding: 0.15em 0.33em 0.1em;
+  border: solid #FFF8;
+  border-width: 2px 0;
 }
